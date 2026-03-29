@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { MdEmail } from "react-icons/md";
-function HeroContent() {
+function HeroContent({ openFile }) {
   const texts = [
     "Exploring LLMs & RAG pipelines 🤖",
     "Building intelligent backend systems ⚙️",
@@ -95,12 +95,15 @@ function HeroContent() {
           📁 Projects
         </button>
 
-        <button className="border border-gray-600 px-5 py-1 rounded">
+        <button
+          onClick={() => openFile("about.html")}
+          className="border border-gray-600 px-5 py-1 rounded hover:bg-[#2a2d2e]"
+        >
           👤 About Me
         </button>
 
         <button className="border border-gray-600 px-5 py-1 rounded">
-          ✉️ Contact
+          📧 Contact
         </button>
       </div>
 

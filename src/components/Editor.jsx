@@ -5,13 +5,14 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 import Contact from './Contact';
 import Readme from './Readme';
-function Editor({ tabs, setTabs, activeTab, setActiveTab }) {
+function Editor({ tabs, setTabs, activeTab, setActiveTab,openFile }) {
+  {activeTab === "home.tsx" && <HeroContent openFile={openFile} />}
 
   // Map file → component
   const getComponent = (name) => {
     switch (name) {
       case "home.tsx":
-        return <HeroContent />;
+        return <HeroContent openFile={openFile}/>;
       case "about.html":
         return <AboutContent />;
       case "projects.js":

@@ -44,6 +44,7 @@ function App() {
           setTabs={setTabs}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+          openFile={openFile}
         />
 
       </div>
