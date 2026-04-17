@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import { MdEmail } from "react-icons/md";
 function HeroContent({ openFile }) {
   const texts = [
-    "Exploring LLMs & RAG pipelines 🤖",
-    "Building intelligent backend systems ⚙️",
-    "Training models & analyzing data 📊",
-    "Turning ideas into scalable products 🚀",
+    "Running on cafffeine and Bugs 📊",
+    "Exploring new techs and same errors everyday 🤖",
+    "Console.log is my therapist 🛠️",
+    "Deploying features faster than I finish my burger 🚀",
+    "Async code, sync anxiety ⏳",
+    "Git commit messages carrying the whole project 📝",
+    "Bugs are not features 🙈"
   ];
 
   const [displayText, setDisplayText] = useState("");
