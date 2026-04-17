@@ -17,7 +17,7 @@ function Explorer({ openFile, activeTab }) {
   ];
 
   return (
-    <div className="w-60 bg-[#252526] text-sm">
+    <div className="w-60 h-full bg-[#252526] text-sm">
       <p className="text-gray-400 px-3 py-2">PORTFOLIO</p>
 
       <div className="space-y-1 px-2">

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { MdEmail } from "react-icons/md";
 function HeroContent({ openFile }) {
   const texts = [
-    "Running on cafffeine and Bugs 📊",
+    "Running on caffeine and Bugs 📊",
     "Exploring new techs and same errors everyday 🤖",
     "Console.log is my therapist 🛠️",
     "Deploying features faster than I finish my burger 🚀",

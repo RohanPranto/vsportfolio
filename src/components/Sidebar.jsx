@@ -6,7 +6,7 @@ import {
   FaFileDownload,
 } from "react-icons/fa";
 
-function Sidebar({ onSearchClick }) {
+function Sidebar({ onSearchClick, onFilesClick, showExplorer = true }) {
   const [showGit, setShowGit] = useState(false);
   const [showDownload, setShowDownload] = useState(false);
 
@@ -32,9 +32,16 @@ function Sidebar({ onSearchClick }) {
   }, []);
 
   return (
-    <div className="relative w-12 h-full bg-[#333333] flex flex-col items-center py-4">
+    <div className="relative w-12 h-full bg-[#333333] flex flex-col items-center ">
       {/* Files */}
-      <div className="p-3 hover:bg-[#444] border-l-2 border-transparent hover:border-white cursor-none">
+      <div
+        onClick={onFilesClick}
+        className={`p-3 hover:bg-[#444] border-l-2 cursor-none ${
+          showExplorer
+            ? "border-white bg-[#444]"
+            : "border-transparent hover:border-white"
+        }`}
+      >
         <FaRegFile size={20} />
       </div>
 
